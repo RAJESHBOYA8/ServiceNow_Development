@@ -1,6 +1,7 @@
 # 📂 GlideRecord Script
 
 🧠 What is GlideRecord?
+
 GlideRecord is a server-side JavaScript class used in ServiceNow to interact with database tables.
 
 It allows developers to:
