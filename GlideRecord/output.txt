@@ -1,0 +1,16 @@
+Backgroundscript result exported via SN Utils
+https://dev292523.service-now.com/sys_script_execution_history.do?sys_id=6dd814198332221012f95d70deaad38a
+
+*** Script: incident numbers are: INC0000012
+*** Script: incident numbers are: INC0000034
+*** Script: incident numbers are: INC0000038
+*** Script: incident numbers are: INC0000006
+*** Script: incident numbers are: INC0009004
+*** Script: incident numbers are: INC0000015
+*** Script: incident numbers are: INC0000019
+*** Script: incident numbers are: INC0000027
+*** Script: incident numbers are: INC0000046
+*** Script: incident numbers are: INC0000051
+*** Script: incident numbers are: INC0000052
+*** Script: incident numbers are: INC0000054
+*** Script: incident numbers are: INC0009005
