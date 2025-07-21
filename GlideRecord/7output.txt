@@ -1,0 +1,8 @@
+*** Script: Short Description:Does not look like a backup occurred last night
+*** Script: Short Description:Hangs when trying to print VISIO document
+*** Script: Short Description:I can't launch my VPN client since the last software update
+*** Script: Short Description:Manager can't access SAP Controlling application
+*** Script: Short Description:SAP Financial Accounting application appears to be down
+*** Script: Short Description:SAP Materials Management is slow or there is an outage
+*** Script: Short Description:Email server is down.
+*** Script: total ractive records:7

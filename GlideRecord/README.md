@@ -1,46 +1,70 @@
-# 📂 GlideRecord Script – Fetch Incidents with Category 'Software'
+# 🧾 ServiceNow GlideRecord Examples
 
-This script demonstrates how to use **GlideRecord** in ServiceNow to query and display incident records where the category is set to `'software'`.
+This repository contains a collection of **GlideRecord** script examples used in ServiceNow to perform various database operations on the `incident` table.
+
+Each script is written in server-side JavaScript and intended for use in Background Scripts, Business Rules, or Script Includes.
 
 ---
 
-## 📜 Script
+## 🔹 Script Summary
 
-```javascript
-var incidentRecord = new GlideRecord("incident"); // Create GlideRecord object for the 'incident' table
-incidentRecord.addQuery('category', 'software');  // Add filter: category = 'software'
-incidentRecord.query();                           // Execute the query
+### 1. **Basic Query by Category**
+Fetches all incidents where the category is set to `software`.
 
-while (incidentRecord.next()) {                   // Loop through matching records
-    gs.info("incident numbers are: " + incidentRecord.number);
-}
-🧠 What is GlideRecord?
-GlideRecord is a server-side JavaScript class used in ServiceNow to interact with database tables.
+### 2. **CONTAINS Operator**
+Finds incidents where the short description contains a specific keyword (e.g., "email").
 
-It allows developers to:
+### 3. **Total Record Count**
+Counts the number of incidents matching a specific condition using `getRowCount()`.
 
-Query records from a table
+### 4. **Active Records Only**
+Uses `addActiveQuery()` to return only active incidents.
 
-Insert new records
+### 5. **Limit Returned Records**
+Limits the number of results returned using `setLimit()`.
 
-Update existing records
+### 6. **Order Results**
+Sorts incidents based on the `short_description` field in ascending or descending order.
 
-Delete records
+### 7. **Encoded Query**
+Uses `addEncodedQuery()` to combine multiple conditions in a single query string.
 
-✅ What This Script Does
-Connects to the incident table.
+### 8. **Null and Not Null Checks**
+Fetches records where a field (like `description`) is null or not null.
 
-Filters records where category = "software".
+### 9. **Insert, Update, and Retrieve Records**
+- **9a**: Inserts a new record into the `incident` table.
+- **9b**: Updates multiple records matching a specific condition.
+- **9c**: Retrieves a record by its `sys_id` using the `get()` method.
 
-Executes the query.
+---
 
-Logs each matching incident number to the system log.
+## 📌 Usage
 
-📘 Example Output
+These examples are meant for learning and demonstration purposes. Always test in a **sub-production** environment before deploying scripts to production instances.
 
-*** Script: incident numbers are: INC0010012
-*** Script: incident numbers are: INC0010034
+---
 
-📌 Note
-This script is intended to run in the ServiceNow Script Editor (like Background Scripts or Business Rules). It will not work in a browser environment.
+## 📚 Topics Covered
+
+- GlideRecord Query Methods
+- Filtering with `addQuery()`, `addActiveQuery()`, and `addEncodedQuery()`
+- Record manipulation: Insert, Update, Get
+- Sorting and limiting results
+- Null/Not Null field checks
+
+---
+
+## 📂 Folder Structure
+
+- `gliderecord_examples/` — Contains `.js` files for each example
+- `README.md` — Brief explanation of each script
+
+---
+
+## 🙌 Contributions
+
+Feel free to fork the repo and add more GlideRecord use cases like `GlideAggregate`, `deleteMultiple()`, or queries on custom tables.
+
+---
 
